@@ -1,0 +1,1 @@
+inpotrt './js/script.js';

@@ -1,0 +1,67 @@
+.contact-us{
+    background-color: #FBFBFB;
+}
+
+.contact-us-form{
+    margin-top: 24px;
+    border-radius: 30px;
+    border: none;
+    padding: 48px 28px;
+    background-color: #f3f3f3;
+}
+
+.form-text{
+    padding-bottom: 28px;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 18px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-input, .textarea-form{
+    border-radius: 12px;
+    height: 42px;
+    width: 279px;
+    display: flex;
+    align-items: center;
+    padding: 14px 0 12px 12px;
+    border: 1px solid rgba(12, 12, 12, 0.15);
+    font-size: 14px;
+    line-height: 18px;
+    background-color: transparent;
+}
+
+.textarea-form{
+    height: 84px;
+}
+
+.form-input::placeholder, .textarea-form::placeholder {
+    color: #0C0C0C;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    display: block;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.send-btn{
+    margin-top: 28px;
+    background-color: #3350E9;
+    width: 134px;
+    height: 42px;
+    border: none;
+    border-radius: 16px;
+    color: #FBFBFB;
+    margin-bottom: 48px;
+}

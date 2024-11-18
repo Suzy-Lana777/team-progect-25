@@ -1,1 +1,1 @@
-impotrt './js/script.js';
+import './js/script.js';

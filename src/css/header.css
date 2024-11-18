@@ -44,7 +44,8 @@ align-items: center;
 
 .menu-list {
     display: flex;
-    justify-content: baseline;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     gap: 40px;
 }
 

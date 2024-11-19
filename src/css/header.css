@@ -3,7 +3,7 @@
 }
 
 .container-header {
-max-width: 375px;
+max-width: 320px;
 padding: 20px;
 margin: 0 auto;
 display: flex;
@@ -54,7 +54,7 @@ align-items: center;
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
     .logo-header {
         padding-top: 6px;
         padding-bottom: 6px;
@@ -89,7 +89,7 @@ align-items: center;
 .nav-link.current::after{
     content: "";
     position: absolute;
-    left: 50%;
+    left: 40%;
     bottom: -10px;
     border-radius: 50%;
     background-color: #3350E9;
@@ -100,7 +100,6 @@ align-items: center;
 
 .socials-list {
     display: flex;
-    /*justify-content: baseline;*/
     gap: 10px;
     margin-left: 203px;
 }
@@ -113,6 +112,16 @@ align-items: center;
     }
 }
 
+@media screen and (min-width: 1024px) {
+
+    .menu-list,
+    .socials-list {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+}
+
 .hidden:hover,
 .hidden:focus {
     opacity: 1;
@@ -120,19 +129,36 @@ align-items: center;
     color: #3350E9;
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
-    color: #3350E9;
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: #3350E9;
+}
+
+.social-list-link:focus-visible .social-list-icon {
+    fill: #0C0C0C;
 }
 
 
 .social-list-link:focus-visible {
-    color: #0C0C0C;
+    outline: 2px solid #3350E9;
 }
 
-.social-list-link {
-    border: 1px;
+.social-list-item {
+    border: 1px solid rgba(12, 12, 12, 0.9);
     border-radius: 10px;
+    border-color: #0C0C0C;
+    width: 36px;
+    height: 36px;
+    transition: border-color 0.3s ease;
+}
+
+.social-list-item:hover,
+.social-list-item:focus {
+    border-color: #3350E9;
+    outline: none;
+}
+
+.social-list-link:focus-visible {
     border-color: #0C0C0C;
 }
 

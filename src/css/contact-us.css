@@ -2,6 +2,13 @@
     background-color: #FBFBFB;
 }
 
+.title-contact-us{
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    font-size: 32px;
+}
+
 .contact-us-form{
     margin-top: 24px;
     border-radius: 30px;
@@ -12,9 +19,9 @@
 
 .form-text{
     padding-bottom: 28px;
+    font-weight: 300;
     text-align: left;
     font-size: 14px;
-    letter-spacing: -0.02em;
     line-height: 18px;
 }
 

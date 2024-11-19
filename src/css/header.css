@@ -3,8 +3,8 @@
 }
 
 .container-header {
-max-width: 320px;
-padding-top: 20px;
+max-width: 375px;
+padding: 20px;
 margin: 0 auto;
 display: flex;
 justify-content: space-between;
@@ -21,6 +21,8 @@ align-items: center;
 @media screen and (min-width: 1158px) {
     .container-header {
         max-width: 1158px;
+        padding-left: 64.5px;
+        padding-right: 64.5px;
     }
 }
 
@@ -31,15 +33,33 @@ align-items: center;
 
 .logo-header {
     font-family: Gilroy;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 24.26px;
+    line-height: 19.41px;
     letter-spacing: -0.02em;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     text-decoration-color: #0C0C0C;
-    margin-right: 203px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+
+@media screen and (min-width: 768px) {
+    .logo-header {
+        font-size: 20px;
+        line-height: 24.26px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .logo-header {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-right: 203px;
+    }
 }
 
 .menu-list {
@@ -47,28 +67,70 @@ align-items: center;
     flex-wrap: nowrap;
     white-space: nowrap;
     gap: 40px;
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    align-items: center;
 }
 
 @media screen and (max-width: 1023px) {
     .menu-list {
-        display: none;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
     }
 }
 
+.nav-link.current {
+    position: relative;
+}
+
+.nav-link.current::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    border-radius: 50%;
+    background-color: #3350E9;
+    width: 8px;
+    height: 8px;
+}
+
+
 .socials-list {
     display: flex;
-    justify-content: baseline;
+    /*justify-content: baseline;*/
     gap: 10px;
     margin-left: 203px;
 }
 
 @media screen and (max-width: 1023px) {
     .socials-list {
-    display: none;
-     }
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
 }
 
-.social-list-icon {
+.hidden:hover,
+.hidden:focus {
+    opacity: 1;
+    pointer-events: auto;
+    color: #3350E9;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    color: #3350E9;
+}
+
+
+.social-list-link:focus-visible {
+    color: #0C0C0C;
+}
+
+.social-list-link {
     border: 1px;
     border-radius: 10px;
     border-color: #0C0C0C;

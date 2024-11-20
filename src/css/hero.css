@@ -8,16 +8,15 @@
 }
 
 .hero-content {
-  margin-bottom: 28px; /* Відступ між текстом і аватарами */
-  max-width: 335px;
+  margin-bottom: 28px;
+  width: 335px;
 }
 
 .main-title {
-  width: 335px;
   font-size: 40px;
   font-weight: 600;
-  color: #0c0c0c;
   text-align: left;
+  line-height: 38px;
 }
 
 .main-title .highlight {
@@ -25,14 +24,13 @@
 }
 
 .hero-description {
-  width: 335px;
   margin-top: 10px;
   font-size: 14px;
   color: #666;
   text-align: left;
+  line-height: 18px;
 }
 
-/* Аватари & Scroll Down */
 .hero-row {
   display: flex;
   justify-content: space-between;
@@ -48,7 +46,6 @@
   height: 44px;
 }
 
-/* Аватари */
 .avatar {
   width: 44px;
   height: 44px;
@@ -72,13 +69,11 @@
   z-index: 3;
 }
 
-/* Контейнер кнопки */
 .scroll-container {
   display: flex;
   align-items: center;
 }
 
-/* Кнопка Scroll Down */
 .scroll-down-link {
   font-size: 1rem;
   color: #0c0c0c;
@@ -90,23 +85,20 @@
 .scroll-down-link:focus {
   color: #3350e9;
 }
-/* Блок зображення */
+
 .hero-image-container {
-  background-image: url('../img/hero img/hero_mob.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   width: 335px;
   height: 366px;
-  /* outline: 1px solid red; */
+
   margin-top: 28px;
 }
 @media (min-width: 768px) {
   .hero-image-container {
-    background-image: url('../img/hero img/hero_tab.webp');
     height: 520px;
     width: 704px;
+    margin-top: 40px;
   }
+
   .avatar {
     width: 56px;
     height: 56px;
@@ -130,67 +122,48 @@
   }
 }
 
-@media (min-width: 768px) and (min-resolution: 192dpi) {
-  .hero-image-container {
-    background-image: url('../img/hero img/hero_tab@2x.webp'); /* Більш якісне зображення */
-  }
-}
-
 @media (min-width: 768px) {
   .hero-container {
     display: flex;
     justify-content: space-between;
+
     flex-wrap: wrap;
     gap: 11px;
   }
-  .main-title {
-    max-width: 557px;
-  }
-  .hero-description {
-    max-width: 480px;
-  }
 
-  .hero-section {
-    display: flex;
-    flex-wrap: nowrap; /* Дозволяє перенесення рядків */
-    justify-content: space-between; /* Простір між колонками */
-    align-items: flex-start; /* Вирівнювання по верхньому краю */
-    text-align: left;
-    max-width: 768px;
+  .hero-description {
+    font-size: 16px;
+    line-height: 20px;
+    width: 480px;
   }
 
   .hero-content {
-    flex: 0 0 calc(75% - 11px); /* Займає половину ширини */
-    margin-right: 0; /* Забрати зайві відступи */
     max-width: 557px;
-    margin-bottom: 40px; /* Відступ між текстом і аватарами */
   }
 
   .hero-row {
-    /* flex: 0 0 10%; */
-    flex: 0 0 calc(25% - 11px); /* Займає половину ширини */
-    /* display: flex; */
-    flex-direction: column; /* Вертикальне розташування */
+    flex: 0 0 calc(25% - 11px);
+
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end; /* Вирівнювання елементів праворуч */
+    align-items: flex-end;
   }
 
   .hero-avatars {
     width: 136px;
     height: 60px;
     display: flex;
-    justify-content: flex-end; /* Аватари вирівнюються праворуч */
+    justify-content: flex-end;
   }
 
   .scroll-container {
-    align-self: flex-end; /* Кнопка вирівнюється праворуч */
-    margin-top: auto; /* Вирівнювання кнопки внизу */
+    align-self: flex-end;
+    margin-top: auto;
   }
 }
 
 @media (min-width: 1280px) {
   .hero-image-container {
-    background-image: url('../img/hero img/hero.webp');
     width: 1150px;
     height: 500px;
   }
@@ -215,22 +188,9 @@
     left: 88px;
     z-index: 3;
   }
-  .hero-container {
-    max-width: 1280px;
-    /* background-color: aquamarine; */
-    display: flex;
-    /* justify-content: space-between; */
-    flex-wrap: wrap;
-    gap: 11px;
-  }
+
   .hero-avatars {
     width: 146px;
     height: 60px;
-  }
-}
-
-@media (min-width: 1280px) and (min-resolution: 192dpi) {
-  .hero-image-container {
-    background-image: url('../img/hero img/hero@2x.webp');
   }
 }

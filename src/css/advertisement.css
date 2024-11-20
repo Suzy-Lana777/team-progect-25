@@ -18,7 +18,7 @@
 
 .container-advertisement {
     background-color: black;
-    background-image: url(/img/advertisement/advertisement-mobile.webp);
+    background-image: url(../img/advertisement-img/advertisement-mobile.webp);
     background-size: cover;
     background-position: center;
     border-radius: 30px;
@@ -32,13 +32,13 @@
 
 @media (min-resolution: 192dpi) {
     .container-advertisement {
-        background-image: url(/img/advertisement/advertisement-mobile.webp);
+        background-image: url(../img/advertisement-img/advertisement-mobile.webp);
     }
 }
 
 @media (min-width: 768px) {
     .container-advertisement {
-        background-image: url(../img/advertisement/advertisement-tablet.webp);
+        background-image: url(../img/advertisement-img/advertisement-tablet.webp);
         flex-direction: column;
         padding: 60px;
     }
@@ -46,7 +46,7 @@
 
 @media (min-width: 1280px) {
     .container-advertisement {
-        background-image: url(../img/advertisement/advertisement.webp);
+        background-image: url(../img/advertisement-img/advertisement.webp);
         flex-direction: row;
         justify-content: space-between;
         padding: 80px 100px;

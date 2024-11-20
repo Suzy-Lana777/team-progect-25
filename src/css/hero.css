@@ -1,17 +1,11 @@
-.hero-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  background-color: #fff;
-}
-
 .hero-content {
   margin-bottom: 28px;
   width: 335px;
 }
 
+.hero-container {
+  margin-top: 60px;
+}
 .main-title {
   font-size: 40px;
   font-weight: 600;
@@ -24,7 +18,7 @@
 }
 
 .hero-description {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 14px;
   color: #666;
   text-align: left;
@@ -89,16 +83,57 @@
 .hero-image-container {
   width: 335px;
   height: 366px;
-
   margin-top: 28px;
 }
 @media (min-width: 768px) {
+  .main-title {
+    font-size: 70px;
+    line-height: 60px;
+  }
   .hero-image-container {
     height: 520px;
     width: 704px;
     margin-top: 40px;
   }
+  .hero-image-container {
+    width: 704px;
+    height: 520px;
+  }
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    max-width: 768px;
+    padding: 0 32px;
+    margin: 0 auto;
+  }
 
+  .hero-description {
+    font-size: 16px;
+    line-height: 20px;
+    width: 480px;
+  }
+
+  .hero-content {
+    margin-bottom: 0px;
+    width: 557px;
+  }
+
+  .hero-row {
+    width: 136px;
+    flex-direction: column;
+  }
+
+  .hero-avatars {
+    width: 136px;
+    height: 60px;
+  }
+
+  .scroll-container {
+    align-self: flex-end;
+    margin-top: auto;
+  }
   .avatar {
     width: 56px;
     height: 56px;
@@ -119,46 +154,6 @@
   .avatar-right {
     left: 82px;
     z-index: 3;
-  }
-}
-
-@media (min-width: 768px) {
-  .hero-container {
-    display: flex;
-    justify-content: space-between;
-
-    flex-wrap: wrap;
-    gap: 11px;
-  }
-
-  .hero-description {
-    font-size: 16px;
-    line-height: 20px;
-    width: 480px;
-  }
-
-  .hero-content {
-    max-width: 557px;
-  }
-
-  .hero-row {
-    flex: 0 0 calc(25% - 11px);
-
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-
-  .hero-avatars {
-    width: 136px;
-    height: 60px;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .scroll-container {
-    align-self: flex-end;
-    margin-top: auto;
   }
 }
 
@@ -192,5 +187,23 @@
   .hero-avatars {
     width: 146px;
     height: 60px;
+  }
+  .hero-content {
+    width: 597px;
+  }
+  .main-title {
+    font-size: 72px;
+    line-height: 63px;
+  }
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 65px;
+  }
+  .hero-row {
+    gap: 189px;
   }
 }

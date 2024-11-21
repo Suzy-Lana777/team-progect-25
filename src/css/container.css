@@ -10,9 +10,9 @@
   padding-bottom: 30px;
 }
 
-.section-paddings:first-child {
+/* .section-paddings:first-child {
   padding-top: 0;
-}
+} */
 
 .section-paddings:last-child {
   padding-bottom: 20px;
@@ -28,9 +28,9 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.section-paddings:first-child {
+/* .section-paddings:first-child {
   padding-top: 0;
-}
+} */
 
 .section-paddings:last-child {
   padding-bottom: 32px;

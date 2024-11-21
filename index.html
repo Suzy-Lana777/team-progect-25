@@ -18,20 +18,20 @@
     <link rel="shortcut icon" href="/team-progect-25/assets/favicon-VcFmnwNB.svg" type="image/x-icon">
     <!-- <link rel=icon href=favicon.png sizes="16x16" type="image/png"> -->
     <script type="module" crossorigin src="/team-progect-25/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/team-progect-25/assets/index-Dg0S-EbW.css">
+    <link rel="stylesheet" crossorigin href="/team-progect-25/assets/index-D_HFesLD.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header-page">
     <div class="container-header">
         <nav class="navigation">
             <a class="logo-header" href="./index.html">watchcharm</a>
                 <ul class="menu-list">
-                    <li class="list-nav"><a class="nav-link current" href="">Home</a></li>
-                    <li class="list-nav"><a class="nav-link" href="">About Us</a></li>
-                    <li class="list-nav"><a class="nav-link" href="">Catalog</a></li>
-                    <li class="list-nav"><a class="nav-link" href="">Sale</a></li>
-                    <li class="list-nav"><a class="nav-link" href="">Reviews</a></li>
-                    <li class="list-nav"><a class="nav-link" href="">Contact Us</a></li>
+                    <li class="list-nav"><a class="nav-link current" href="#header-page">Home</a></li>
+                    <li class="list-nav"><a class="nav-link" href="#about-us">About Us</a></li>
+                    <li class="list-nav"><a class="nav-link" href="#go-catalog">Catalog</a></li>
+                    <li class="list-nav"><a class="nav-link" href="#team">Sale</a></li>
+                    <li class="list-nav"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="list-nav"><a class="nav-link" href="#contact-us">Contact Us</a></li>
                 </ul>
                 <ul class="socials-list">
                     <li class="social-list-item">
@@ -108,10 +108,10 @@
 </div>
     </div>
 </section>
-      <section id="about-us" class="section-paddings about-us">
+      <section class="section-paddings about-us">
     <div class="container about-us-cont">
         <div class="text-title-container">
-            <h2 class="title-about-us">About Us</h2>
+            <h2 class="title-about-us" id="about-us">About Us</h2>
             <div class="text-about-us">
                 <p class="text-first-part">
                     Welcome to our premium watch collection, where luxury and style meet functionality and precision. Our selection of
@@ -131,16 +131,16 @@
         alt="Photo of Watch"/>
     </div>
 </section>
-      <section id="go-catalog" class="catalog">
+      <section class="catalog section-paddings">
   <div class="container">
-    <h2 class="catalog-title">Catalog</h2>
+    <h2 class="catalog-title" id="go-catalog">Catalog</h2>
     <ul class="catalog-list">
       <li class="catalog-item">
         <div class="catalog-container-nev">
           <div class="catalog-picture-box">
             <picture>
               <source
-                srcset="/img/catalog/desc1.webp 1x, /img/catalog/desc1-2x.webp 2x"
+                srcset="/src/img/catalog-img/desc1.webp 1x, /img/catalog/desc1-2x.webp 2x"
                 media="(min-width: 1280px)"
               />
               <source
@@ -314,7 +314,7 @@
   </div>
 </section>
 
-      <section class="advertisement">
+      <section class="advertisement section-paddings">
   <div class="container">
     <div class="container-advertisement">
       <h2 class="advertisement-visually-hidden">Explore Your Unique Style</h2>
@@ -464,9 +464,9 @@
 </section>
 
       <!-- Reviews -->
-<section class="reviews" id="reviews">
+<section class="reviews section-paddings">
     <div class="reviews-container container">
-      <h2 class="reviews-title">Reviews</h2>
+      <h2 class="reviews-title" id="reviews">Reviews</h2>
       <ul class="reviews-list">
         <li class="reviews-item">
           <img
@@ -520,13 +520,10 @@
     </div>
   </section>
     
-       
-
-
-<section id="contact-us" class="section-paddings contact-us">
+       <section id="contact-us" class="section-paddings contact-us">
     <div class="container">
         <div class="title-container">
-            <h2 class="title-contact-us">Contact Us</h2>
+            <h2 class="title-contact-us" id="contact-us">Contact Us</h2>
         </div>
         <div class="form-and-img-cont">
             <div class="contact-us-form">
@@ -629,22 +626,22 @@
       <div class="footer-menu-cont">
         <ul class="footer-menu">
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="">Home</a>
+            <a class="footer-menu-link" href="#header-page">Home</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="">About Us</a>
+            <a class="footer-menu-link" href="#about-us">About Us</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="">Catalog</a>
+            <a class="footer-menu-link" href="#go-catalog">Catalog</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="">Sale</a>
+            <a class="footer-menu-link" href="#team">Sale</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="">Reviews</a>
+            <a class="footer-menu-link" href="#reviews">Reviews</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="">Contact Us</a>
+            <a class="footer-menu-link" href="#contact-us">Contact Us</a>
           </li>
         </ul>
         <a
@@ -672,23 +669,13 @@
 </footer>
 
 
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../fonts/fonts.css" />
-<link rel="stylesheet" href="../css/mobile-menu.css" />  
-</head>
-<body>
-    <div class="backdrop is-open">
-<div class="modal">
-    <button class="modal-close-btn" type="button">
-        <svg  class="modal-close-icon" width="40" height="40">
-        <use href="../img/mobile-menu/x.svg#icon-x"></use>  
-        </svg>
-    </button>
+    <div class="mobile-menu" data-menu>
+    <div class="modal">
+        <button class="modal-close-btn" type="button">
+            <svg  class="modal-close-icon" width="40" height="40">
+            <use href="../img/mobile-menu/x.svg#icon-x"></use>  
+            </svg>
+        </button>
     <div class="container-modal">
         <div class="modal-menu">
         <nav class="modal-nav">
@@ -730,13 +717,11 @@
                     </li>
                 </ul>
             </div>
-        
-    </div>
+        </div>
     </div>
 </div>
-</div>
-</body>
-</html>
+
+
 
 
 

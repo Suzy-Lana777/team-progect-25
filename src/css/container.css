@@ -25,16 +25,16 @@
     padding: 0 32px;
   }
   .section-paddings {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-/* .section-paddings:first-child {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* .section-paddings:first-child {
   padding-top: 0;
 } */
 
-.section-paddings:last-child {
-  padding-bottom: 32px;
-}
+  .section-paddings:last-child {
+    padding-bottom: 32px;
+  }
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
@@ -43,8 +43,7 @@
     padding: 0 65px;
   }
   .section-paddings {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }

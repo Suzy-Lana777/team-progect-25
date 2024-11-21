@@ -1,5 +1,7 @@
 /* ================ SALE STYLES ================ */
-
+.sale-section {
+  background-color: #fbfbfb;
+}
 .sale-container-title {
   font-weight: 600;
   font-size: 32px;

@@ -1,3 +1,17 @@
+/* ================ HERO STYLES ================ */
+
+.hero-section {
+  background-color: #fbfbfb;
+  padding-top: 0;
+}
+.hero-vector {
+  max-width: 375px;
+  height: 1px;
+  border: 1px;
+  background-color: rgba(12, 12, 12, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
 .hero-content {
   text-align: center;
   margin-left: auto;
@@ -6,7 +20,8 @@
 }
 
 .hero-container {
-  margin-top: 60px;
+  padding-top: 60px;
+  border-top: 1px solid rgba(12, 12, 12, 0.1);
 }
 .main-title {
   font-size: 40px;
@@ -34,6 +49,8 @@
   margin-top: 20px;
   gap: 15px;
   width: 335px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-avatars {
@@ -86,6 +103,8 @@
   width: 335px;
   height: 366px;
   margin-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 768px) {
   .main-title {
@@ -101,13 +120,13 @@
     width: 704px;
     height: 520px;
   }
+
   .hero-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
     flex-wrap: wrap;
     max-width: 768px;
-    padding: 0 32px;
+    padding: 80px 32px 0 32px;
     margin: 0 auto;
   }
 
@@ -120,11 +139,13 @@
   .hero-content {
     margin-bottom: 0px;
     width: 557px;
+    margin-left: 0;
   }
 
   .hero-row {
     width: 136px;
     flex-direction: column;
+    margin-top: 0;
   }
 
   .hero-avatars {
@@ -160,9 +181,21 @@
 }
 
 @media (min-width: 1280px) {
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-left: 65px;
+    padding-right: 65px;
+  }
   .hero-image-container {
     width: 1150px;
     height: 500px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .avatar {
     width: 60px;
@@ -197,15 +230,9 @@
     font-size: 72px;
     line-height: 63px;
   }
-  .hero-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 65px;
-  }
+
   .hero-row {
     gap: 189px;
+    margin-top: 0;
   }
 }

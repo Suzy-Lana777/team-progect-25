@@ -75,6 +75,10 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .reviews-container {
+    width: 1280px;
+    height: 100%;
+  }
   .reviews-list {
     gap: 20px;
   }
@@ -87,3 +91,5 @@
     width: calc((100% - 40) / 3);
   }
 }
+
+

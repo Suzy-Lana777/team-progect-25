@@ -26,7 +26,7 @@
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
-    background-image: url(../img/mobile-menu/image-tablet1x.jpg);
+    background-image: url(/img/mobile-menu/image-tablet1x.jpg);
   }
 }
 
@@ -34,7 +34,7 @@
   (min-resolution: 192dpi),
   (-webkit-min-device-pixel-ratio: 2) {
   .mobile-menu {
-    background-image: url(../img/mobile-menu/image-tablet2x.jpg);
+    background-image: url(/img/mobile-menu/image-tablet2x.jpg);
   }
 }
 

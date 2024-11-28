@@ -1,4 +1,5 @@
 .header {
+    border-bottom: 1px solid rgba(12, 12, 12, 0.2);
     background-color: #FBFBFB;
 }
 
@@ -182,6 +183,7 @@ align-items: center;
 
 @media screen and (min-width: 1024px) {
     .open-menu-btn {
-        display: none;
+        /*display: none;*/
+        visibility: hidden;
     }
 }
